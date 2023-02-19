@@ -1,5 +1,7 @@
 # init.lua
 
+<img src="https://user-images.githubusercontent.com/56817415/213471997-34837219-88cc-4db2-baca-e25813a89789.png" alt="screenshot">
+
 Rewrote my neovim config in Lua, because Lua is the new thing now I guess.
 
 ## Installation
