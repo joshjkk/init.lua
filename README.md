@@ -4,7 +4,21 @@
 
 Rewrote my neovim config in Lua, because Lua is the new thing now I guess.
 
-## Installation
+# Installation
+
+## Install script
+
+Run the [installer.sh](./installer.sh) script then run the following commands inside ```~/.config/nvim/lua/config/packer.lua```:
+
+``` bash
+:so
+```
+
+``` bash
+:PackerSync
+```
+
+## Manual installation
 
 ### Install [packer](https://github.com/wbthomason/packer.nvim):
 
