@@ -127,15 +127,7 @@ return require('packer').startup(function(use)
 
   use('mbbill/undotree')
 
-  use('tpope/vim-fugitive')
-
-  use('preservim/nerdtree')
-
-  use 'tiagofumo/vim-nerdtree-syntax-highlight'
-
   use 'kyazdani42/nvim-web-devicons'
-
-  use('ryanoasis/vim-devicons')
 
   use {
 	  'VonHeikemen/lsp-zero.nvim',
