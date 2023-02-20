@@ -8,7 +8,7 @@ Rewrote my neovim config in Lua, because Lua is the new thing now I guess.
 
 ## Install script
 
-Run the [installer.sh](./installer.sh) script then run the following commands inside ```~/.config/nvim/lua/config/packer.lua```:
+Run the [install.sh](./install.sh) script then run the following commands inside ```~/.config/nvim/lua/config/packer.lua```:
 
 ``` bash
 :so
