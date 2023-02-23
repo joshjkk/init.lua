@@ -18,7 +18,7 @@ return require('packer').startup(function(use)
 	  as = 'rose-pine',
 	  config = function()
 		  require("rose-pine").setup()
-		  -- vim.cmd('colorscheme rose-pine')
+		  vim.cmd('colorscheme rose-pine')
 	  end
   })
 
@@ -65,14 +65,14 @@ return require('packer').startup(function(use)
         mini = false,
         -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
     },
-})
+  })
 
   -- setup must be called before loading
-  vim.cmd.colorscheme "catppuccin"
+  -- vim.cmd.colorscheme "catppuccin"
 
-  -- use('Mofiqul/vscode.nvim')
+  use("morhetz/gruvbox")
 
-  -- vim.cmd('colorscheme vscode')
+  -- vim.cmd.colorscheme("gruvbox")
 
   use {
       'nvim-lualine/lualine.nvim',
@@ -119,7 +119,7 @@ return require('packer').startup(function(use)
           winbar = {},
           inactive_winbar = {},
           extensions = {}
- }
+  }
 
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
@@ -160,7 +160,7 @@ return require('packer').startup(function(use)
                               -- refer to the configuration section below
                       }
               end
-        }
       }
+    }
   }
 end)
