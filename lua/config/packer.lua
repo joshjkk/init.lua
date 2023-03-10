@@ -19,7 +19,7 @@ return require('packer').startup(function(use)
 	  config = function()
           require('rose-pine').setup({
               --- @usage 'auto'|'main'|'moon'|'dawn'
-              variant = 'moon',
+              variant = 'main',
               --- @usage 'main'|'moon'|'dawn'
               dark_variant = 'main',
               bold_vert_split = false,
@@ -64,9 +64,17 @@ return require('packer').startup(function(use)
                   StatusLine = { fg = 'love', bg = 'love', blend = 10 },
               }
           })
-		  vim.cmd('colorscheme rose-pine')
+		  -- vim.cmd('colorscheme rose-pine')
 	  end
   })
+
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional, for file icons
+    },
+    tag = 'nightly' -- optional, updated every week. (see issue #1193)
+  }
 
   use { "catppuccin/nvim", as = "catppuccin" }
 
@@ -116,9 +124,9 @@ return require('packer').startup(function(use)
   -- setup must be called before loading
   -- vim.cmd.colorscheme "catppuccin"
 
-  use("morhetz/gruvbox")
+  use { "ellisonleao/gruvbox.nvim" }
 
-  -- vim.cmd.colorscheme("gruvbox")
+  vim.cmd.colorscheme("rose-pine")
 
   use {
       'nvim-lualine/lualine.nvim',
@@ -167,13 +175,15 @@ return require('packer').startup(function(use)
           extensions = {}
   }
 
-  use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+  -- use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
   use('ThePrimeagen/harpoon')
 
   use('mbbill/undotree')
 
   use 'kyazdani42/nvim-web-devicons'
+
+  use('sheerun/vim-polyglot')
 
   use {
 	  'VonHeikemen/lsp-zero.nvim',
